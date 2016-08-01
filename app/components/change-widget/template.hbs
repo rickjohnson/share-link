@@ -1,0 +1,9 @@
+{{#if obj.type}}
+    Update
+{{else}}
+    Create
+{{/if}}
+{{json-pretty
+    obj=obj.change
+    shouldHighlight=true
+}}
