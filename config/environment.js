@@ -4,8 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'ember-share',
     environment: environment,
-    baseURL: '/',
-    locationType: 'auto',
+    baseURL: '/share-link/',
+    locationType: 'hash',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -34,7 +34,7 @@ module.exports = function(environment) {
     ENV.apiUrl = 'https://staging-share.osf.io'
 
     // Testem prefers this...
-    ENV.baseURL = '/';
+    ENV.baseURL = '/share-link';
 
     // keep test console output quieter
     ENV.APP.LOG_ACTIVE_GENERATION = false;

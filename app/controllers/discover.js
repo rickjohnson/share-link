@@ -90,6 +90,7 @@ export default ApplicationController.extend({
             'contentType': 'application/json',
             'data': queryBody
         }).then((json) => {
+	    let queryData = json;
             let results = json.hits.hits.map((hit) => {
                 // HACK
                 let source = hit._source;
@@ -105,10 +106,12 @@ export default ApplicationController.extend({
                 });
                 return source;
             });
+	    queryData = JSON.stringify(results);
             Ember.run(() => {
                 this.set('aggregations', json.aggregations);
                 this.set('loading', false);
                 this.get('results').addObjects(results);
+		this.get('queryData').addObjects(queryData);
             });
         });
     },

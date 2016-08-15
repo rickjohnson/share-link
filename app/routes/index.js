@@ -3,6 +3,6 @@ import Ember from 'ember';
 export default Ember.Route.extend({
     session: Ember.inject.service(),
     beforeModel() {
-        return this.transitionTo('/discover');
+        return this.transitionTo('/discoversmall');
     }
 });
