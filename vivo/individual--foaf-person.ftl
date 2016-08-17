@@ -62,7 +62,7 @@
     <section id="individual-info" ${infoClass!} role="region"> 
     <section id="right-hand-column" role="region">
         <#include "individual-visualizationFoafPerson.ftl">    
-         <div class="collaboratorship-link-container">
+         <div id="share-list" class="collaboratorship-link-container">
         <#include "share-list-person.ftl">
 	here
         </div>
