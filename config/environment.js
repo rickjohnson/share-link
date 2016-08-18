@@ -30,6 +30,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
   }
 
+  //ENV.APP.rootElement = '#share-list';
   if (environment === 'staging') {
     ENV.apiUrl = 'https://staging-share.osf.io'
 
@@ -40,7 +41,7 @@ module.exports = function(environment) {
     ENV.APP.LOG_ACTIVE_GENERATION = false;
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
-    // ENV.APP.rootElement = '#ember-staging';
+    //ENV.APP.rootElement = '#ember-staging';
   }
 
   if (environment === 'production') {

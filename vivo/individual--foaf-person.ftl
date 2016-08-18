@@ -59,13 +59,19 @@
         <#include "individual-webpage.ftl">
     </section>
 
+    <section id="share" role="region">
+    <head><base href="../"></head>
+    	 <iframe src="share-link/#/discoversmall"></iframe>
+         <div id="share-list" class="collaboratorship-link-container">
+          </div>
+        <script type="text/javascript">
+           var shareIncludeDiv = $("#share-list");
+           //shareIncludeDiv.load("share-link/#/discoversmall");
+        </script>
+    </section>
     <section id="individual-info" ${infoClass!} role="region"> 
     <section id="right-hand-column" role="region">
         <#include "individual-visualizationFoafPerson.ftl">    
-         <div id="share-list" class="collaboratorship-link-container">
-        <#include "share-list-person.ftl">
-	here
-        </div>
         </section>
         <#include "individual-adminPanel.ftl">
         <header>

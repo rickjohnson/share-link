@@ -11,7 +11,7 @@
 <!--<body>-->
         <div id="share_include"></div>
 <script type="text/javascript">
-  var shareIncludeDiv = $("#share-list");
+  var shareIncludeDiv = $("#ember387");
   shareIncludeDiv.load("share-link/#/discoversmall");
 </script>
 <!--  </body>
